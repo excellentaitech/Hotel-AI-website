@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+:root {
+  /* Backgrounds */
+  --background: #F8F5F1;
+  --background-card: #FFFFFF;
+  --background-alt: #F2EDE8;
+  --background-hero: #EDE8E2;
+
+  /* Brand Colors */
+  --navy: #002D60;
+  --navy-light: #003D7A;
+  --medium-blue: #0053A4;
+  --gold: #C9A66B;
+  --gold-hover: #B8956A;
+  --coral: #FF6B4A;
+  --champagne: #E8D9C0;
+
+  /* Text Colors */
+  --text-heading: #002D60;
+  --text-body: #2D3748;
+  --text-muted: #5A6577;
+
+  /* Borders */
+  --border-subtle: #E5DFD8;
+  --border-divider: #DDD6CC;
+
+  /* Feedback */
+  --success: #22C55E;
+  --error: #EF4444;
+}
+
+@theme inline {
+  /* Colors */
+  --color-background: var(--background);
+  --color-background-card: var(--background-card);
+  --color-background-alt: var(--background-alt);
+  --color-background-hero: var(--background-hero);
+
+  --color-navy: var(--navy);
+  --color-navy-light: var(--navy-light);
+  --color-medium-blue: var(--medium-blue);
+  --color-gold: var(--gold);
+  --color-gold-hover: var(--gold-hover);
+  --color-coral: var(--coral);
+  --color-champagne: var(--champagne);
+
+  --color-text-heading: var(--text-heading);
+  --color-text-body: var(--text-body);
+  --color-text-muted: var(--text-muted);
+
+  --color-border-subtle: var(--border-subtle);
+  --color-border-divider: var(--border-divider);
+
+  --color-success: var(--success);
+  --color-error: var(--error);
+
+  /* Font */
+  --font-sans: var(--font-nunito-sans);
+}
+
+/* Base styles */
+body {
+  background: var(--background);
+  color: var(--text-body);
+  font-family: var(--font-nunito-sans), system-ui, sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-heading);
+  line-height: 1.2;
+}
+
+/* Focus indicators for accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--navy);
+  outline-offset: 2px;
+}
+
+/* Skip link for accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--navy);
+  color: #FFFFFF;
+  padding: 8px 16px;
+  z-index: 100;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0;
+}
