@@ -9,7 +9,7 @@ export default function DemoHotel() {
           Visit our demo hotel and experience our AI Booking Agent and Customer Service Agent live. See exactly how the AI handles real guest interactions.
         </p>
         <a
-          href="https://hotelmirador.vercel.app"
+          href="https://hma.excellentai.tech/"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 text-lg font-semibold text-navy hover:text-medium-blue transition-colors"
