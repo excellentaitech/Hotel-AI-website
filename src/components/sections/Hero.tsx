@@ -42,29 +42,8 @@ export default function Hero() {
 
           {/* Video - 60% */}
           <div className="lg:col-span-3">
-            <div className="relative aspect-video rounded-xl overflow-hidden shadow-2xl group cursor-pointer">
-              {/* Video thumbnail with team image */}
-              <img
-                src="/video-thumbnail.png"
-                alt="Hotel owner watching revenue flow from his hotel to Booking.com - stop losing money to OTA commissions"
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-              {/* Subtle overlay for play button visibility */}
-              <div className="absolute inset-0 bg-navy/5 transition-colors duration-300 group-hover:bg-navy/10" />
-              {/* Play button and text overlay */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-3 sm:mb-4 rounded-full bg-gold/90 flex items-center justify-center transition-all duration-300 group-hover:bg-gold group-hover:scale-110 shadow-lg">
-                    <svg className="w-8 h-8 sm:w-10 sm:h-10 text-text-heading ml-1" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </div>
-                  <p className="text-white text-sm sm:text-base font-semibold drop-shadow-lg">Product Overview Video</p>
-                </div>
-              </div>
-              {/* Uncomment when video ID is available:
-              <YouTubeEmbed videoid="VIDEO_ID" height={400} params="rel=0" />
-              */}
+            <div className="relative aspect-video rounded-xl overflow-hidden shadow-2xl">
+              <YouTubeEmbed videoid="ml9Yvd_b1-w" params="rel=0" />
             </div>
           </div>
         </div>
