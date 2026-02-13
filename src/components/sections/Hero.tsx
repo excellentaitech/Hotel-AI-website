@@ -45,8 +45,8 @@ export default function Hero() {
             <div className="relative aspect-video rounded-xl overflow-hidden shadow-2xl group cursor-pointer">
               {/* Video thumbnail with team image */}
               <img
-                src="/video-thumbnail.jpg"
-                alt="Meet your AI hotel team - three AI agents ready to help with bookings, customer service, and data insights"
+                src="/video-thumbnail.png"
+                alt="Hotel owner watching revenue flow from his hotel to Booking.com - stop losing money to OTA commissions"
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
               />
               {/* Subtle overlay for play button visibility */}
